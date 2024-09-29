@@ -1,0 +1,44 @@
+<header
+  class="header-wrapper w-100 d-flex align-items-center justify-content-between"
+  [ngClass]="{ header_fixed: headerPosition }"
+>
+  <a class="brand__section">
+    <div class="brand__logo">
+      <img src="assets/images/Taste Hub Logo.png" />
+    </div>
+    <p class="brand__name">Taste Hub</p>
+  </a>
+  <div class="items__right">
+    <div class="menu__section">
+      <div
+        class="hamburger__menu"
+        (click)="menuIcon()"
+        [ngClass]="{ isActive: isMenuActive }"
+      >
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+      <div
+        class="menu__overlay"
+        appOutside
+        (clickOutside)="clickedOut($event)"
+        *ngIf="isMenuActive"
+      >
+        <div class="menu__items">
+          <div class="menu__item">
+            <div class="toogle__button">
+              <label for="themeSelector" class="label">Dark Theme</label>
+              <input
+                type="checkbox"
+                class="checkbox"
+                id="themeSelector"
+                (change)="changeTheme($event)"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

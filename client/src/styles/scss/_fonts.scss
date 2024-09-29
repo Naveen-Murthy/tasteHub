@@ -1,0 +1,32 @@
+// For Heading (Titles):
+// Montserrat: A clean and versatile sans-serif font that is easy to read and looks great in both headers and body text.
+
+// For Subheadings and Body Text:
+// Nunito: A modern and elegant sans-serif font with a touch of uniqueness, making it suitable for subheadings and body text.
+
+// For Logo and Special Design Elements:
+// Playfair Display: A sophisticated and stylish serif font that adds a touch of elegance, ideal for logos and special headings.
+
+@font-face {
+  font-family: 'PlayfairDisplay';
+  src: url(^assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PlayfairDisplayItalic';
+  src: url(^assets/fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf);
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(^assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+//font variables
+$PlayfairDisplay: 'PlayfairDisplay';
+$PlayfairDisplayItalic: 'PlayfairDisplayItalic';

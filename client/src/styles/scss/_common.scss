@@ -1,0 +1,19 @@
+.m-hide {
+  display: block;
+
+  @include layout(768) {
+    display: none;
+  }
+}
+
+.m-show {
+  display: none;
+
+  @include layout(768) {
+    display: block;
+  }
+}
+
+.show {
+  display: block;
+}
